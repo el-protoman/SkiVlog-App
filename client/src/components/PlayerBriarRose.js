@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import Header from "../Header";
 import Footer from "../Footer";
 
-export default class PlayerNoSelect extends Component {
+export default class PlayerBriarRose extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -26,24 +26,18 @@ export default class PlayerNoSelect extends Component {
       <div className="App-header">
         <Header />
         <div style={{display:'flex',justifyContent:'center',alignItems:'center'}}>
-        <iframe
-          width="400"
-          height="600"
-          src="https://www.youtube.com/embed/Qdzs7nQFyXs"
-          title="YouTube video player"
-          frameborder="2"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen"
-        ></iframe>
-        <iframe
-          width="800"
-          height="600"
-          src="https://www.youtube.com/embed/SuDNVN0n7eQ"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen"
-        ></iframe>
+          {" "}
+          <iframe
+            width="800"
+            height="800"
+            src="https://www.youtube.com/embed/Dv47BECDYw4"
+            title="YouTube video player"
+            frameborder="2"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen"
+          ></iframe>
+          {" "}
         </div>
-        
+
         <h1
           style={{
             display: "flex",
