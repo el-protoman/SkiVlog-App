@@ -17,5 +17,8 @@
     "media-thumbnail": "^1.0.0",
     "nodemon": "^2.0.2",
     "thumbsupply": "^0.4.0"
+  },
+  "devDependencies": {
+    "gh-pages": "^3.2.3"
   }
 }
