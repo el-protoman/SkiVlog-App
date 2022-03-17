@@ -12,6 +12,7 @@ import Map from './pages/mapbox'
 //import skiMap from './pages/map';
 import Navbar from './components/Navbar';
 import PlayerNoSelect from './components/PlayerNoSelect'
+import PlayerSilverthorne from './components/PlayerSilverthorne'
 
 
 function App() {
@@ -23,7 +24,7 @@ function App() {
         <Route path="/player/:id" component={Player}></Route>
         <Route path='/mainpage' component={mainpage}></Route>
         <Route path='/map'> <Map/> </Route>
-        <Route path='/Silverthorne*' component={PlayerNoSelect}></Route>
+        <Route path='/Silverthorne*' component={PlayerSilverthorne}></Route>
         <Route path='/Lower Sawmill*' component={PlayerNoSelect}></Route>
         <Route path='/Eldorado*' component={PlayerNoSelect}></Route>
         <Route path='/Red Rover*' component={PlayerNoSelect}></Route>
