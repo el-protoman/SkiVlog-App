@@ -1,0 +1,215 @@
+{
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Cashier",
+        "description": "Blue"
+      },
+      "geometry": {
+        "coordinates": [
+          -106.077103,
+          39.460053
+        ],
+        "type": "Point"
+      },
+      "id": "08600207e8eaff99d557f1313ac257c1"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Lower Lehman",
+        "description": "Green"
+      },
+      "geometry": {
+        "coordinates": [
+          -106.063242,
+          39.460314
+        ],
+        "type": "Point"
+      },
+      "id": "15949e5fe40be30b9c712ee4ef3d2cd5"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Red Rover",
+        "description": "Green"
+      },
+      "geometry": {
+        "coordinates": [
+          -106.056849,
+          39.463816
+        ],
+        "type": "Point"
+      },
+      "id": "16f9ce93ee578a6796eeca2e9618074e"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Lower Sawmill",
+        "description": "Green"
+      },
+      "geometry": {
+        "coordinates": [
+          -106.05676,
+          39.472119
+        ],
+        "type": "Point"
+      },
+      "id": "27b4f2e0cc62e8e99e909928c06f9d15"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Silverthorne",
+        "description": "Green"
+      },
+      "geometry": {
+        "coordinates": [
+          -106.063685,
+          39.460754
+        ],
+        "type": "Point"
+      },
+      "id": "3ebe5c32de5bf27c6add95b3eff3d30b"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Frontier",
+        "description": "Green"
+      },
+      "geometry": {
+        "coordinates": [
+          -106.058295,
+          39.463716
+        ],
+        "type": "Point"
+      },
+      "id": "42707135aa6c2030b07136c67ed5fc47"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Upper Lehman",
+        "description": "Blue"
+      },
+      "geometry": {
+        "coordinates": [
+          -106.073918,
+          39.458653
+        ],
+        "type": "Point"
+      },
+      "id": "48a1ab84d026841013883858c19f257a"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bonanza",
+        "description": "Blue"
+      },
+      "geometry": {
+        "coordinates": [
+          -106.077167,
+          39.460884
+        ],
+        "type": "Point"
+      },
+      "id": "4901b3a48f7e4e42aaa824fbc30c3069"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Country Boy",
+        "description": "Blue"
+      },
+      "geometry": {
+        "coordinates": [
+          -106.066154,
+          39.462318
+        ],
+        "type": "Point"
+      },
+      "id": "4eaacbd17787e94586b63ead9056371c"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Eldorado",
+        "description": "Green"
+      },
+      "geometry": {
+        "coordinates": [
+          -106.059927,
+          39.466214
+        ],
+        "type": "Point"
+      },
+      "id": "79d61e4be2b02efc6fcd7eec4d75d67b"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Gold King",
+        "description": "Blue"
+      },
+      "geometry": {
+        "coordinates": [
+          -106.075627,
+          39.464077
+        ],
+        "type": "Point"
+      },
+      "id": "8092dfe01e05466d11ded4999e128ae7"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sizzler",
+        "description": "Black"
+      },
+      "geometry": {
+        "coordinates": [
+          -106.076091,
+          39.458995
+        ],
+        "type": "Point"
+      },
+      "id": "9f12802cb1b34ea1fe507cc2e80c4b84"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Briar Rose",
+        "description": "Blue"
+      },
+      "geometry": {
+        "coordinates": [
+          -106.079403,
+          39.45875
+        ],
+        "type": "Point"
+      },
+      "id": "bf25ac50679793c356cb36d86851a314"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Peerless",
+        "description": "Black"
+      },
+      "geometry": {
+        "coordinates": [
+          -106.073707,
+          39.465526
+        ],
+        "type": "Point"
+      },
+      "id": "da0335874e24df8d9c0610afcb969759"
+    }
+  ],
+  "type": "FeatureCollection"
+}
