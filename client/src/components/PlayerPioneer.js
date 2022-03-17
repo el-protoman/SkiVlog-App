@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import Header from "../Header";
 import Footer from "../Footer";
 
-export default class PlayerSilverthorne extends Component {
+export default class PlayerPioneer extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -30,26 +30,12 @@ export default class PlayerSilverthorne extends Component {
           <iframe
             width="800"
             height="800"
-            src="https://www.youtube.com/embed/Xa3ywRXzRDA"
+            src="https://www.youtube.com/embed/wkFwjRkMhRw"
             title="YouTube video player"
             frameborder="2"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen"
           ></iframe>
-          <iframe
-            width="800"
-            height="800"
-            src="https://www.youtube.com/embed/JYHnfxULzVQ"
-            title="YouTube video player"
-            frameborder="2"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen"
-          ></iframe><iframe
-            width="800"
-            height="800"
-            src="https://www.youtube.com/embed/WwedbHOXlfo"
-            title="YouTube video player"
-            frameborder="2"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen"
-          ></iframe>{" "}
+          {" "}
         </div>
 
         <h1
