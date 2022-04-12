@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/SkiVlog-App/static/css/main.6937f398.css",
-    "main.js": "/SkiVlog-App/static/js/main.6fedf8ee.js",
+    "main.js": "/SkiVlog-App/static/js/main.ef648e02.js",
     "static/media/SkiProfile.JPG": "/SkiVlog-App/static/media/SkiProfile.9740ba45c14ef29c9825.JPG",
     "static/media/Breckenridge-PisteMap-2017.jpg": "/SkiVlog-App/static/media/Breckenridge-PisteMap-2017.b4635c2fb75af12b1172.jpg",
     "static/media/EPICHeader.png": "/SkiVlog-App/static/media/EPICHeader.75ded31d5ca07b60e22b.png",
@@ -11,10 +11,10 @@
     "static/media/linkedin.svg": "/SkiVlog-App/static/media/linkedin.9e52cf326e0bbf3cd9a3378906c0d35c.svg",
     "static/media/facebook.svg": "/SkiVlog-App/static/media/facebook.54b6ed1796ae51e7991a86b99ceb8334.svg",
     "main.6937f398.css.map": "/SkiVlog-App/static/css/main.6937f398.css.map",
-    "main.6fedf8ee.js.map": "/SkiVlog-App/static/js/main.6fedf8ee.js.map"
+    "main.ef648e02.js.map": "/SkiVlog-App/static/js/main.ef648e02.js.map"
   },
   "entrypoints": [
     "static/css/main.6937f398.css",
-    "static/js/main.6fedf8ee.js"
+    "static/js/main.ef648e02.js"
   ]
 }
