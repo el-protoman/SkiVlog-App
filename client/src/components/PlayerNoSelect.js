@@ -1,6 +1,7 @@
 import React, { Component } from "react";
-import Header from "../Header";
-import Footer from "../Footer";
+//import Header from "../Header";
+import NavbarTrails from "./NavbarTrails";
+import Footer from "./Footer";
 
 export default class PlayerNoSelect extends Component {
   constructor(props) {
@@ -24,14 +25,16 @@ export default class PlayerNoSelect extends Component {
   render() {
     return (
       <div className="App-header">
-        <Header />
+        {/* <Header /> */}
+        <NavbarTrails />
+        <h1 style={{fontStyle:"italic",textAlign:"center"}}> ⛷ Off-piste! No videos were found ⛷ </h1>
         <div style={{display:'flex',justifyContent:'center',alignItems:'center'}}>
         <iframe
           width="400"
           height="600"
           src="https://www.youtube.com/embed/Qdzs7nQFyXs"
           title="YouTube video player"
-          frameborder="2"
+          frameBorder="2"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen"
         ></iframe>
         <iframe
@@ -39,20 +42,10 @@ export default class PlayerNoSelect extends Component {
           height="600"
           src="https://www.youtube.com/embed/SuDNVN0n7eQ"
           title="YouTube video player"
-          frameborder="0"
+          frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen"
         ></iframe>
         </div>
-        
-        <h1
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-          }}
-        >
-          {this.state.videoData.name}
-        </h1>
         <Footer />
       </div>
     );

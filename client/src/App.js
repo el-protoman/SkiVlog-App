@@ -1,16 +1,18 @@
 import React from 'react';
 import {
   Route,
-  BrowserRouter as Router,
-  Switch,
+  //BrowserRouter as Router,
+  Switch, useLocation
 } from "react-router-dom";
+// import {AnimatedSwitch} from 'react-router-transition';
 import Home from './pages/Home';
-import About from './pages/about'
-import Player from './components/Player';
+// import HomeV2 from './pages/HomeV2';
+// import About from './pages/about'
+import About2 from './pages/about2'
+// import Player from './components/Player';
 import './App.css';
 import mainpage from './pages/mainpage';
 import Map from './pages/mapbox'
-//import skiMap from './pages/map';
 import Navbar from './components/Navbar';
 import PlayerNoSelect from './components/PlayerNoSelect'
 import PlayerSilverthorne from './components/PlayerSilverthorne'
@@ -24,16 +26,25 @@ import PlayerFouroclock from './components/PlayerFouroclock'
 import PlayerCrosscut from './components/PlayerCrosscut'
 import PlayerLowerSawmill from './components/PlayerLowerSawmill'
 import PlayerGoldking from './components/PlayerGoldking'
-
+import { AnimatePresence } from 'framer-motion';
+// import {mapStyles,bounce,bounceTransition} from './components/AppTransitions';
 
 function App() {
+  const location = useLocation()
   return (
-    <Router>
+    <div>
       <Navbar/>
-      <Switch>
-        <Route exact path="/" component={Home}></Route>
-        <Route path="/player/:id" component={Player}></Route>
-        <Route path="/about"> <About/> </Route>
+      <AnimatePresence exitBeforeEnter initial={false}>
+      {/* <AnimatedSwitch 
+      atEnter={bounceTransition.atEnter}
+      atLeave={bounceTransition.atLeave}
+      atActive={bounceTransition.atActive}
+      mapStyles={mapStyles}
+      className="route-wrapper"> */}
+      <Switch location={location} key={location.pathname}> 
+        <Route exact path="/"><Home/></Route>
+        {/* <Route path="/player/:id" component={Player}></Route> */}
+        <Route path="/about"> <About2/> </Route>
         <Route path='/mainpage' component={mainpage}></Route>
         <Route path='/map'> <Map/> </Route>
         <Route path='/Reverie*' component={PlayerNoSelect}></Route>
@@ -62,9 +73,11 @@ function App() {
         <Route path='/Cashier*' component={PlayerCashier}></Route>
         <Route path='/Briar Rose*' component={PlayerBriarRose}></Route>
         <Route path='/Bonanza*' component={PlayerNoSelect}></Route>
-        {/* <Route path='/map' component={skiMap}></Route> */}
+      
       </Switch>
-    </Router>
+      {/* </AnimatedSwitch> */}
+    </AnimatePresence>
+    </div>
   );
 }
 

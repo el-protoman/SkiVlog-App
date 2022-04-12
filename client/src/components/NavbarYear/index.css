@@ -1,0 +1,7 @@
+h2, .h2 {
+    font-size:"1 rem"
+}
+
+.MuiFormControl-root,.MuiTextField-root,.css-1u3bzj6-MuiFormControl-root-MuiTextField-root {
+    transform: translate(-110px, 0px)
+}
