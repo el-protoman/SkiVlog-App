@@ -1,52 +1,101 @@
-import React, { Component } from "react";
-import Header from "../Header";
-import Footer from "../Footer";
+import React, { useState, useEffect } from "react";
+//import Header from "../Header";
+import Footer from "./Footer";
+import NavbarYear from "./NavbarYear";
+import NavbarTrails from "./NavbarTrails";
+import { motion } from "framer-motion";
+import ClimbingBoxLoader from "react-spinners/ClimbingBoxLoader";
+import dayjs from "dayjs";
 
-export default class PlayerLowerSawmill extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      videoId: this.props.match.params.id,
-      videoData: {},
-    };
-  }
+export default function PlayerLowerSawmill() {
+  const [selectedYear, setSelectedYear] = useState(`${dayjs().year()}`);
+  const [isLoading, setIsLoading] = useState(true);
+  useEffect(() => {
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 2000);
+  }, [selectedYear]);
 
-  //   async componentDidMount() {
-  //     try {
-  //       const res = await fetch(`http://localhost:4000/video/${this.state.videoId}/data`);
-  //       const data = await res.json();
-  //       this.setState({ videoData: data });
-  //     } catch (error) {
-  //       console.log(error);
-  //     }
-  //   }
+  const passData = (data) => {
+    setSelectedYear(data);
+    setIsLoading(true);
+  };
 
-  render() {
-    return (
-      <div className="App-header">
-        <Header />
-        <div style={{display:'flex',justifyContent:'center',alignItems:'center'}}>
-          {" "}
-          <iframe
-            width="800"
-            height="800"
-            src="https://www.youtube.com/embed/yRASR9oTBw4"
-            title="YouTube video player"
-            frameborder="2"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen"
-          ></iframe>
-          {" "}
-        </div>
-
-        <h1
+  if (selectedYear === "2022") {
+    return isLoading ? (
+      <>
+        {/* <Header /> */}
+        <NavbarTrails />
+        <NavbarYear passData={passData} selectedYear={selectedYear} />
+        <div
           style={{
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
+            position: "fixed",
+            top: "55%",
+            left: "50%",
+            transform: "translate(-50%, -50%)",
           }}
         >
-          {this.state.videoData.name}
-        </h1>
+          <ClimbingBoxLoader
+            color={"#374153"}
+            isLoading={isLoading}
+            size={100}
+          />
+        </div>
+      </>
+    ) : (
+      <div className="App-header">
+        {/* <Header /> */}
+        <NavbarTrails />
+        <NavbarYear passData={passData} selectedYear={selectedYear} />
+        <motion.div exit={{ opacity: 0 }}>
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+            }}
+          >
+            {" "}
+            <iframe
+              width="800"
+              height="800"
+              src="https://www.youtube.com/embed/yRASR9oTBw4"
+              title="YouTube video player"
+              frameBorder="2"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen"
+            ></iframe>{" "}
+          </div>
+        </motion.div>
+        <Footer />
+      </div>
+    );
+  } else {
+    return isLoading ? (
+      <>
+        {/* <Header /> */}
+        <NavbarTrails />
+        <NavbarYear passData={passData} selectedYear={selectedYear} />
+        <div
+          style={{
+            position: "fixed",
+            top: "55%",
+            left: "50%",
+            transform: "translate(-50%, -50%)",
+          }}
+        >
+          <ClimbingBoxLoader
+            color={"#374153"}
+            isLoading={isLoading}
+            size={100}
+          />
+        </div>
+      </>
+    ) : (
+      <div className="App-header">
+        {/* <Header /> */}
+        <NavbarTrails />
+        <NavbarYear passData={passData} selectedYear={selectedYear} />
+        <motion.div exit={{ opacity: 0 }}></motion.div>
         <Footer />
       </div>
     );

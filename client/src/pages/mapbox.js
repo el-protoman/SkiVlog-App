@@ -6,6 +6,8 @@ import mapboxgl from "mapbox-gl";
 // see https://docs.mapbox.com/mapbox-gl-js/api/
 import "mapbox-gl/dist/mapbox-gl.css";
 import "./mapbox.css";
+import { motion } from "framer-motion";
+import NavbarTrails from "../components/NavbarTrails";
 
 mapboxgl.accessToken =
   "pk.eyJ1IjoibmRhZ29zdGlubyIsImEiOiJjbDB0MXA0b2QwOGI4M3BueWxpcGF1NzdlIn0.Fz0VM31QViCG6aVnsXvGXA";
@@ -23,7 +25,9 @@ const Popup = ({ routeName, id, type }) => (
       <h4 className="row-title">Route Type</h4>
       <div className="row-value">{type}</div>
     </div>
-    <p className="route-id"><a href={routeName}> View More </a></p>
+    <p className="route-id">
+      <a href={routeName}> View More </a>
+    </p>
   </div>
 );
 
@@ -77,7 +81,12 @@ const Map = () => {
     return () => map.remove();
   }, []);
 
-  return <div ref={mapContainer} style={{ width: "100%", height: "100vh" }} />;
+  return (
+    <motion.div exit={{ opacity: 0 }}>
+      <NavbarTrails style={{position:"fixed"}} />
+      <div ref={mapContainer} style={{ width: "100%", height: "100vh" }} />
+    </motion.div>
+  );
 };
 
 export default Map;

@@ -1,0 +1,42 @@
+import React from "react";
+import profile from "../SkiProfile.JPG";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
+import "./Home.css";
+import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
+import { Container, Row, Col } from "react-bootstrap";
+
+export default function HomeV2() {
+  return (
+    <div className="App-header">
+      <Header />
+      <motion.div exit={{ opacity: 0 }}>
+        <Container fluid>
+          <Row>
+            <Col>
+              <div className="center" key="profile">
+                <Link to={`/mainpage`}>
+                  <div
+                    className="card"
+                    style={{ minHeight: "auto", height: "fit-content" }}
+                  >
+                    <img
+                      src={profile}
+                      alt="skiprofile"
+                      style={{ minHeight: "auto", height: "fit-content" }}
+                    />
+                  </div>
+                </Link>
+              </div>
+            </Col>
+          </Row>
+          <Row>
+            <h3>At the top of Peak 6 - 12,500+ feet above sea level!</h3>
+          </Row>
+        </Container>
+      </motion.div>
+      <Footer />
+    </div>
+  );
+}

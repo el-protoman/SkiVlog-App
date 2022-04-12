@@ -1,6 +1,6 @@
 .App-header {
   min-height: 100vh;
-  color: white;
+  color: black;
 }
 
 header, footer {
@@ -11,7 +11,7 @@ header, footer {
 }
 
 header {
-  margin-bottom: 50px;
+  margin-bottom: 0px;
   font-size: 28px;
 }
 
