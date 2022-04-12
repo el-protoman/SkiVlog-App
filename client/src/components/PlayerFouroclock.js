@@ -63,8 +63,37 @@ export default function PlayerFouroclock() {
               title="YouTube video player"
               frameBorder="2"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen"
-            ></iframe>{" "}
+            ></iframe><iframe
+            width="800"
+            height="800"
+            src="https://www.youtube.com/embed/SCbOPxdLp-k"
+            title="YouTube video player"
+            frameBorder="2"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen"
+          ></iframe>{" "}
           </div>
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+            }}
+          >{" "}
+          <iframe
+            width="800"
+            height="800"
+            src="https://www.youtube.com/embed/6otbLRLNqNs"
+            title="YouTube video player"
+            frameBorder="2"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen"
+          ></iframe><iframe
+          width="800"
+          height="800"
+          src="https://www.youtube.com/embed/eboB7iqzAJU"
+          title="YouTube video player"
+          frameBorder="2"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen"
+        ></iframe>{" "}</div>
         </motion.div>
         <Footer />
       </div>
