@@ -39,10 +39,13 @@ const trailOptions = [
   { value: "Cashier", label: "Cashier" },
   { value: "Claimjumper", label: "Claimjumper" },
   { value: "Columbine", label: "Columbine" },
-  { value: "4 oclock", label: `Four O'Clock` },
+  { value: "4 oclock", label: `4 O'Clock` },
   { value: "Freeway", label: "Freeway" },
   { value: "Lower Sawmill", label: "Lower Sawmill" },
   { value: "Silverthorne", label: "Silverthorne" },
+  { value: "Reverie", label: "Reverie"},
+  { value: "AngelsRest", label: "Angel's Rest"},
+  { value: "Peerless", label: "Peerless"}
 ];
 
 let sortedTrailOptions = trailOptions.sort((a,b)=>(a.value > b.value)? 1 : -1);
