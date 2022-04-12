@@ -9,8 +9,12 @@ import "./mapbox.css";
 import { motion } from "framer-motion";
 import NavbarTrails from "../components/NavbarTrails";
 
+// Public token
+// mapbogl.accessToken = "pk.eyJ1IjoibmRhZ29zdGlubyIsImEiOiJjbDB0MXA0b2QwOGI4M3BueWxpcGF1NzdlIn0.Fz0VM31QViCG6aVnsXvGXA"
+
+// Restricted
 mapboxgl.accessToken =
-  "pk.eyJ1IjoibmRhZ29zdGlubyIsImEiOiJjbDB0MXA0b2QwOGI4M3BueWxpcGF1NzdlIn0.Fz0VM31QViCG6aVnsXvGXA";
+  "pk.eyJ1IjoibmRhZ29zdGlubyIsImEiOiJjbDF3ZXE4MzYwMDBrM3Bzam9uNmtmdjZ4In0.Vi4KxKVhSJma29bHYmfnWA";
 
 /**
  * Our custom Popup component used to render a nicely styled
