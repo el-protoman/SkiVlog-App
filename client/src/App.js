@@ -46,6 +46,7 @@ function App() {
       className="route-wrapper"> */}
       <Switch location={location} key={location.pathname}> 
         <Route exact path="/"><Home/></Route>
+        <Route path="/SkiVlog-App"><Home/></Route>
         {/* <Route path="/player/:id" component={Player}></Route> */}
         <Route path="/about"> <About2/> </Route>
         <Route path='/mainpage' component={mainpage}></Route>
